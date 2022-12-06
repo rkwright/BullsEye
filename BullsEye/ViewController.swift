@@ -18,6 +18,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var scoreLabel: UILabel!
     @IBOutlet weak var roundsLabel: UILabel!
     @IBOutlet weak var restartLabel: UILabel!
+    @IBOutlet weak var infoLabel: UILabel!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -64,6 +65,10 @@ class ViewController: UIViewController {
     @IBAction func restartTapped( _ button: UIButton ) {
         print("Restarting")
         restartGame()
+    }
+
+    @IBAction func infoTapped( _ button: UIButton ) {
+        print("Info ...")
     }
 
     func decorateSlider() {
